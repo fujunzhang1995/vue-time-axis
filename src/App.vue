@@ -13,11 +13,9 @@ export default {
         }
     },
     methods: {
-        timeAxisSelTime (a) {
+        timeAxisSelTime(a) {
             console.log(123)
         }
-    },
-    components: {
     }
 }
 </script>
