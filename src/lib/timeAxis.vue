@@ -24,7 +24,6 @@
         data() {
             return {
                 timeAxisArr: [], // 时间标记数组
-                currentTime: 0, // 当天零点
                 time: 0, // 展示总时间
                 currentPlayState: true // 监听父组件时间传值
             }
@@ -104,7 +103,6 @@
             timeDate.setHours(0)
             timeDate.setMinutes(0)
             timeDate.setSeconds(0)
-            this.currentTime = parseInt(timeDate.getTime() / 1000)
             this.calculationProgressBar()
         },
         props: {
@@ -113,6 +111,10 @@
                 type: Array
             },
             playTime: {
+                required: true,
+                type: Number
+            },
+            currentTime: {
                 required: true,
                 type: Number
             }

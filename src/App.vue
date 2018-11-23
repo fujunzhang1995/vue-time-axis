@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <vue-time-axis :timeArr="[{endTime: 1539911782, startTime: 1539911181}]" :playTime="1539911782" @exportSelTime="timeAxisSelTime"></vue-time-axis>
+        <!--<vue-time-axis :timeArr="[{endTime: 1539911782, startTime: 1539911181}]" :playTime="1539911782" @exportSelTime="timeAxisSelTime"></vue-time-axis>-->
     </div>
 </template>
 
